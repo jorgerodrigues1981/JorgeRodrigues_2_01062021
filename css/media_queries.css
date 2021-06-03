@@ -1,0 +1,125 @@
+
+@media screen and (max-width: 375px) { 
+ 
+
+    #container {
+        width: 100%;
+        margin: auto;
+    }
+
+    header {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: left;
+    }
+  
+    header h1 {
+        margin: 0;
+        padding: 0.5em;
+    }
+
+    header p {
+        margin: 0;
+        padding: 1em;
+    }
+
+
+    #top_header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #container_filtres {
+        display: flex;
+        flex-flow: column wrap;
+        align-self: left;
+        margin: 1em 0 1em 0;
+    }
+
+    .filtres {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border: 0.1em solid #F2F2F2;
+        border-radius: 1em;
+        padding: 0;
+        margin: 1em 0 0 0;
+        height: 32px;
+    }
+
+    #top_menu li {
+        display: block;
+        margin-left: 0;
+    }
+
+    nav a:hover {
+        color: #0d49a1;
+        text-decoration: none;
+    }
+
+    #section1 {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    #container_hebergements {
+        display: flex;
+        flex-direction: column;
+        background-color: #F2F2F2;
+        justify-content: center;
+        border-radius: 1em;
+        margin: auto;
+        font-size: 0.8em;
+        grid-gap: 1em;
+    }
+
+    #container_populaires {
+        display: flex;
+        flex-flow: column wrap;
+        padding: 1em 2em 1em 2em;
+        border-radius: 1em;
+        margin: 1em 0 1em 0;
+        grid-gap: 1em;
+        font-size: 0.8em;
+        align-self: flex-start;
+        background-color: white;
+    }
+
+    #container_activites {
+        display: flex;
+        flex-flow: column nowrap;
+        width: 20em;
+        grid-gap: 2em;
+        border-radius: 1em 1em 0 0;
+        margin: 3em 0 4em 0;
+    }
+
+    #box1 {
+        height: 12em;
+        border-radius: 1em 1em 0 0;
+        background-image: url("../images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    #box4 {
+        height: 12em;
+        border-radius: 1em 1em 0 0;
+        background-image: url("../images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        background-color: #F2F2F2;
+        margin: 20px 0 0 0;
+        padding; 20px 0 0 px;
+    }
+}

@@ -1,0 +1,477 @@
+/*Text */ 
+
+* {
+    font-family: 'Raleway', sans-serif;
+    color: black;
+}
+
+h1 {
+    font-size: 1.6em;
+    margin: 0;
+    text-align: left;
+}
+
+h2{
+    font-size: 1.4em;
+}
+
+p {
+    font-size: 1em;
+}
+
+#container {
+    width: 90%;
+    margin: auto;
+    margin-top: 0;
+}
+
+body {
+    margin-top: 0;
+}
+
+
+/* HEADER */
+
+header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#top_header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 1em 0;
+}
+
+nav {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: right;
+    align-content: center;
+}
+
+.menu {
+    text-align: center;
+    padding: 1em;
+}
+
+nav div {
+    margin-left: 1em;
+}
+
+a:link {
+    text-decoration: none;
+    color: #0065FC;
+}
+
+nav a:hover {
+    color: #0d49a1;
+    border-top: solid 0.2em #0065FC;
+}
+
+
+a:visited {
+    color: black;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 35em;
+}
+
+#icon_location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.5em;
+    width: 2.5em;
+    background-color:  #F2F2F2;
+    border-radius: 1em 0 0 1em;
+}
+
+#button_recherche {
+    color: white;
+    background-color:  #0065FC;
+    border: none;
+    border-radius: 0 1em 1em 0;
+    height: 40px;
+    width: 100px;
+}
+
+#button_recherche:hover {
+    background-color:  #0d49a1;
+    cursor: pointer;
+}
+
+#search {
+    height: 40px;
+    border: 0.2 solid #DEEBFF;
+    width: 200px;
+}
+
+#top_menu li {
+    display: inline;
+    margin-left: 3em;
+}
+
+
+#info_disponibilites {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.fas {
+    padding-top: 10px;
+    height: 25px;
+    width: 35px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.fas.fa-info {
+    border: 1px solid #F2F2F2;
+    margin-right: 20px;
+}
+
+#container_filtres {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.filtres {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 0.1em solid #F2F2F2;
+    border-radius: 1em;
+    padding: 0 1em 0 0;
+    margin: 1em 1em 1em 1em;
+    height: 32px;
+}
+
+.filtres > p {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+
+.filtres:hover {
+    background-color: #DEEBFF;
+}
+
+
+.filtres > i {
+    position: relative;
+    text-align: center;
+    left: -5px;
+    background-color: #DEEBFF;
+}
+
+
+
+/* SECTION 1 */
+
+#section1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    grid-gap: 2em;
+}
+
+
+/* Hébergements dans la ville */
+
+#container_hebergements {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    background-color: #F2F2F2;
+    border-radius: 1em;
+    padding: 1em 2em 1em 2em;
+    flex-wrap: wrap;
+    font-size: 0.8em;
+    align-self: top;
+    grid-gap: 2em;
+}
+
+#container_hebergements div:nth-child(1) {
+    grid-column: 1 / -1;
+}
+
+#container_hebergements img {
+    width: 200px;
+    height: 125px;
+    border-radius: 1em 1em 0 0;
+}
+
+.hebergements h3 {
+    margin-left: 1em;
+}
+
+.hebergements p {
+    margin-left: 1em;
+}
+
+.hebergements {
+    background-color: white;
+    border-radius: 1em;
+    padding: 0.5em;
+    box-shadow: 0.009em 0.009em 1em rgb(150, 149, 149);
+}
+
+#container_hebergements a {
+    text-decoration: none;
+}
+
+.hebergements:hover {
+    box-shadow: 0.009em 0.009em 1em #bdc2ca;
+    opacity: 80%;
+}
+
+
+
+/* étoiles */
+.fas.fa-chart-line {
+
+}
+
+.fa.fa-star.checked {
+    color: #0065FC;
+}
+
+.fa.fa-star {
+    color: #F2F2F2;
+}
+
+.etoiles {
+    margin-left: 1em;
+}
+
+
+
+/* SECTION 1: Hébergements populaires */
+
+#container_populaires {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: ;
+    background-color: #F2F2F2;
+    padding: 1em 2em 1em 2em;
+    border-radius: 1em;
+    margin-left: 1em;
+    grid-gap: 2em;
+    font-size: 0.8em;
+    align-self: top;
+}
+
+.populaires {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 1em;
+    padding: 0.5em;
+    box-shadow: 0.009em 0.009em 1em rgb(150, 149, 149);
+}
+
+
+.populaires:hover {
+    box-shadow: 0.009em 0.009em 1em #bdc2ca;
+    opacity: 80%;
+}
+
+#header_populaires {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.populaires img {
+    width: 125px;
+    height: 125px;
+    border-radius: 1em 0 0 1em;
+}
+
+.populaires h3 {
+    margin-left: 1em;
+}
+
+.populaires p {
+    margin-left: 1em;
+}
+
+/* SECTION 2: Activités dans la ville */
+#section2 {
+    margin: auto;
+}
+
+
+#container_activites {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 15em 15em;
+    grid-gap: 2em;
+    border-radius: 1em 1em 0 0;
+    margin: 3em 0 4em 0;
+}
+
+.activites {
+    border-radius: 1em 1em 1em 1em;
+    box-shadow: 0.009em 0.009em 1em rgb(150, 149, 149);
+}
+
+.activites:hover {
+    box-shadow: 0.009em 0.009em 1em #bdc2ca;
+    opacity: 80%;
+}
+
+#container_activites a:hover {
+    text-decoration: none;
+}
+
+.description {
+    padding: 1em 1em 1em 1em;
+}
+
+#box1 {
+    height: 29em;
+    min-width: 15em;
+    border-radius: 1em 1em 0 0;
+    background-image: url("../images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#box2 {
+    height: 12em;
+    min-width: 15em;
+    border-radius: 1em 1em 0 0;
+    background-image: url("../images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#box3 {
+    height: 12em;
+    min-width: 15em;
+    border-radius: 1em 1em 0 0;
+    background-image: url("../images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#box4 {
+    height: 29em;
+    min-width: 15em;
+    border-radius: 1em 1em 0 0;
+    background-image: url("../images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#box5 {
+    height: 12em;
+    min-width: 15em;
+    border-radius: 1em 1em 0 0;
+    background-image: url("../images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#box6 {
+    height: 12em;
+    min-width: 15em;
+    border-radius: 1em 1em 0 0;
+    background-image: url("../images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#container_activites :nth-child(1) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+
+#container_activites :nth-child(2) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+
+#container_activites :nth-child(3) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+#container_activites :nth-child(4) {
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+}
+
+#container_activites :nth-child(5) {
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+}
+
+#container_activites :nth-child(6) {
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+}
+
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    width: 100%;
+    background-color: #F2F2F2;
+}
+
+.footer_menu_header {
+    font-weight: 900;
+}
+
+
+
+footer li {
+    display: block;
+    padding: 10px;
+    margin-right: 10em ;
+
+}
+
+#footer_menu {
+    font-weight: 300;
+}
+
+footer a:active {
+    color: black;
+}
+
+footer a:visited {
+    color: rgb(0, 0, 0);
+}
+
+footer a:hover {
+    color: #0065FC;
+}
