@@ -1,6 +1,22 @@
 
 @media screen and (max-width: 500px) { 
 
+    body {
+        margin: 0;
+    }
+
+    #container {
+        width: 100%;
+        margin-top: 0;
+    }
+
+/* HEADER */
+
+    header {
+        width: 90%;
+        margin: auto;
+    }
+
     #top_header {
         display: flex;
         flex-flow: row wrap;
@@ -37,7 +53,7 @@
         display: flex;
         flex-flow: row wrap;
         align-content: flex-start;
-        margin: 1em 0 1em 0;
+        margin: 1em 0 2em 0;
         grid-gap: 1em
     }
 
@@ -49,7 +65,13 @@
         border-radius: 1em;
         padding: 0;
         margin: 1em 0 0 0;
-        height: 32px;
+        height: 2em;
+        padding-right: 1em;
+    }
+
+    #filtres_titre {
+        margin-top: 1.5em;
+        padding-right: 20em;
     }
 
     form {
@@ -88,7 +110,6 @@
 
     #icon_location {
         height: 2.5em;
-
     }
 
     .fas.fa-search:hover {
@@ -96,6 +117,19 @@
         cursor: pointer;
     }
 
+    .info_disponibilites {
+        margin-top: 5em;
+        background-color: lawngreen;
+    }
+
+    /* SECTION 1 */
+
+    #section1 {
+        display: flex;
+        flex-flow: row wrap;
+        width: 100%;
+        margin: auto;
+    }
 
     #section1 :nth-child(1) {
         order: 2;
@@ -103,13 +137,6 @@
 
     #section1 :nth-child(2) {
         order: 1;
-    }
-
-    /* SECTION 2 */
-
-    #section1 {
-        display: flex;
-        flex-flow: column nowrap;
     }
 
     #container_hebergements {
@@ -123,20 +150,76 @@
         height: 100%;
     }
 
+    #container_hebergements :nth-child(1) {
+        order: 1;
+    }
+
+    #container_hebergements :nth-child(2) {
+        order: 2;
+    }
+
+    #container_hebergements :nth-child(3) {
+        order: 3;
+    }
+
+    #container_hebergements :nth-child(4) {
+        order: 4;
+    }
+
+    #container_hebergements :nth-child(5) {
+        order: 5;
+    }
+
+    #container_hebergements :nth-child(6) {
+        order: 6;
+    }
+
+    #container_hebergements :nth-child(7) {
+        order: 7;
+    }
+
+    #container_hebergements :nth-child(8) {
+        order: 8;
+    }
+
+
     #container_populaires {
         display: flex;
         flex-flow: column wrap;
-        padding: 1em 2em 1em 2em;
-        margin: 1em 0 1em 0;
-        grid-gap: 1em;
-        font-size: 0.8em;
         align-self: flex-start;
         border-radius: 0;
+        margin: auto;
+        width: 100%;
     }
 
     #populaires {
         display: flex;
         justify-content: flex-start;
+    }
+
+    #container_populaires :nth-child(1) {
+        order: 1;
+    }
+
+    #container_populaires :nth-child(2) {
+        order: 2;
+    }
+
+    #container_populaires :nth-child(3) {
+        order: 3;
+    }
+
+    #container_populaires :nth-child(4) {
+        order: 4;
+    }
+
+
+    /* SECTION 2: Activités */
+
+    #section2 {
+        margin: auto;
+        width: 90%;
+        margin-bottom: 2em;
     }
 
     #container_activites {
@@ -145,6 +228,7 @@
         grid-gap: 2em;
         justify-content: center;
         font-weight: bold;
+        margin: auto;
     }
 
     #box1 {
