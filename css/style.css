@@ -49,6 +49,8 @@ header {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: left;
 }
 
 #top_header {
@@ -129,7 +131,6 @@ form {
     width: 20em;
 }
 
-
 #info_disponibilites {
     display: flex;
     flex-direction: row;
@@ -159,9 +160,7 @@ form {
     margin-top: 1em;
     margin-bottom: 1em;
     font-weight: bold;
-    margin: auto;
 }
-
 
 .filtres {
     display: flex;
@@ -179,11 +178,9 @@ form {
     padding-right: 1em;
 }
 
-
 .filtres:hover {
     background-color: #DEEBFF;
 }
-
 
 .filtres > i {
     position: relative;
@@ -192,6 +189,9 @@ form {
     background-color: #DEEBFF;
 }
 
+#filtres_titre {
+    padding-right: 2em;
+}
 
 
 /* SECTION 1 */

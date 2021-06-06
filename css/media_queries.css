@@ -52,8 +52,8 @@
     #container_filtres {
         display: flex;
         flex-flow: row wrap;
-        align-content: flex-start;
-        margin: 1em 0 2em 0;
+        align-content: left;
+        margin: 2em 0 2em 0;
         grid-gap: 1em
     }
 
