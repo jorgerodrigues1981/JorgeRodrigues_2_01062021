@@ -35,25 +35,41 @@
     }
 
     nav {
+        display: flex;
         margin-bottom: 1em;
-        flex-grow: 2;
+        width: 100%;
+        margin: auto;
+    }
+
+    nav ul {
+        display: flex;
+        width: 100%;
+        margin: auto;
+        padding: 0;
+    }
+
+    nav li {
+        display: flex;
+        border-bottom: 0.2em solid #F2F2F2;
+        width: 100%;
+        padding: 0;
+        padding-bottom: 1em;
+        justify-content: center;
+        align-content: center;
     }
 
     nav li:hover {
         border-top: 0;
-        border-bottom: 0.15em solid #0065FC;
+        border-bottom: 0.2em solid #0065FC;
         color: #0065FC;
     }
 
-    li {
-        border-bottom: 0.15em solid #F2F2F2;
-    }
     
     #container_filtres {
         display: flex;
         flex-flow: row wrap;
         align-content: left;
-        margin: 2em 0 2em 0;
+        margin: 1em 0 2em 0;
         grid-gap: 1em
     }
 
