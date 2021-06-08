@@ -137,7 +137,7 @@ body {
         flex-flow: row wrap;
         width: auto;
         margin: auto;
-        width: 90%;
+        width: 100%;
     }
 
     #section1 :nth-child(1) {
