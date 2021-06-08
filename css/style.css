@@ -6,9 +6,7 @@
 
 h1 {
     font-size: 1.5rem;
-    margin: 0;
     text-align: left;
-    margin-top: 0.5em;
 }
 
 h2{
@@ -48,13 +46,12 @@ header {
     display: flex;
     flex-flow: column;
     align-content: left;
-    margin-top: 0;
 }
 
 #top_header {
     display: flex;
     flex-flow: row nowrap;
-    margin-top: 0.1em;
+    margin-top: 0.5em;
     align-items: center;
 }
 
@@ -216,9 +213,9 @@ form {
 /* SECTION 1: Hébergements dans la ville */
 
 #container_hebergements {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 60%;
     background-color: #F2F2F2;
     border-radius: 1em;
     padding: 1em 2em 1em 2em;
@@ -228,35 +225,31 @@ form {
     grid-gap: 2em;
 }
 
+.responsive {
+    object-fit: cover;
+}
+
 #container_hebergements div:nth-child(1) {
     grid-column: 1 / -1;
 }
 
 #container_hebergements img {
     width: 100%;
-    height: 10em;
+    height: 6em;
     border-radius: 1em 1em 0 0;
-}
-
-.hebergements h3 {
-    margin-left: 1em;
-}
-
-.hebergements p {
-    margin-left: 1em;
 }
 
 .hebergements {
     background-color: white;
     border-radius: 1em;
-    padding: 0.5em;
+    padding: 0.4em 0.4em 0.5em 0.4em;
     box-shadow: 0.009em 0.009em 1em rgb(150, 149, 149);
-    min-width: 14em;
-    height: fit-content;
+    max-width: 13em;
 }
 
-#container_hebergements a {
-    text-decoration: none;
+#container_hebergements h2 {
+    flex-grow: 3;
+    margin-right: 10em;
 }
 
 .hebergements:hover {
@@ -267,10 +260,6 @@ form {
 
 
 /* étoiles */
-.fas.fa-chart-line {
-
-}
-
 .fa.fa-star.checked {
     color: #0065FC;
 }
@@ -279,22 +268,17 @@ form {
     color: #F2F2F2;
 }
 
-.etoiles {
-    margin-left: 1em;
-}
-
-
-
 /* SECTION 1: Hébergements populaires */
 
 #container_populaires {
     display: flex;
     flex-flow: column;
+    width: 40%;
     background-color: #F2F2F2;
     padding: 1em 2em 1em 2em;
     border-radius: 1em;
     margin-left: 1em;
-    grid-gap: 1em;
+    grid-gap: 2em;
     font-size: 0.8em;
     align-self: top;
 }
@@ -302,12 +286,15 @@ form {
 .populaires {
     display: flex;
     flex-direction: row;
-    margin: 1em 0 1em 0;
     background-color: white;
     min-width: 19em;
     border-radius: 1em;
     padding: 0.5em;
     box-shadow: 0.009em 0.009em 1em rgb(150, 149, 149);
+}
+
+.populaires.etoiles {
+    margin-left: 1em;
 }
 
 
@@ -324,18 +311,12 @@ form {
     height: fit-content;
 }
 
-.populaires img {
-    width: 125px;
-    height: 125px;
+#container_populaires img {
+    object-fit: cover;
+    width: 8em;
+    height: 8em;
+    margin-right: 1em;
     border-radius: 1em 0 0 1em;
-}
-
-.populaires h3 {
-    margin-left: 1em;
-}
-
-.populaires p {
-    margin-left: 1em;
 }
 
 #afficher_plus:hover {
