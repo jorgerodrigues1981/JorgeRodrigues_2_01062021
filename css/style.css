@@ -1,23 +1,22 @@
-/*Text */ 
-
 * {
     font-family: 'Raleway', sans-serif;
     color: black;
+    font-size: 1rem;
 }
 
 h1 {
-    font-size: 1.6em;
+    font-size: 1.5rem;
     margin: 0;
     text-align: left;
     margin-top: 0.5em;
 }
 
 h2{
-    font-size: 1.4em;
+    font-size: 1.4rem;
 }
 
 p {
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 a {
@@ -47,9 +46,7 @@ body {
 
 header {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    flex-flow: column;
     align-content: left;
     margin-top: 0;
 }
@@ -92,6 +89,10 @@ nav li:hover {
     color: black;
 }
 
+.item3_menu:visited {
+    color: inherit;
+}
+
 .item_menu:hover {
     border-top: 0.15em solid #0065FC;
     color: #0065FC;
@@ -109,8 +110,8 @@ form {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 2.1em;
-    width: 2.5em;
+    min-height: 2.5em;
+    min-width: 2.5em;
     background-color:  #F2F2F2;
     border-radius: 1em 0 0 1em;
 }
@@ -250,7 +251,7 @@ form {
     border-radius: 1em;
     padding: 0.5em;
     box-shadow: 0.009em 0.009em 1em rgb(150, 149, 149);
-    width: 100%;
+    min-width: 14em;
     height: fit-content;
 }
 
@@ -303,7 +304,7 @@ form {
     display: flex;
     flex-direction: row;
     background-color: white;
-    min-width: 25em;
+    min-width: 19em;
     border-radius: 1em;
     padding: 0.5em;
     box-shadow: 0.009em 0.009em 1em rgb(150, 149, 149);
@@ -333,6 +334,10 @@ form {
 
 .populaires p {
     margin-left: 1em;
+}
+
+#afficher_plus:hover {
+    color: #0065FC;
 }
 
 /* SECTION 2: Activités dans la ville */
@@ -450,6 +455,7 @@ form {
     box-shadow: 0.009em 0.009em 1em rgb(150, 149, 149);
     padding: 0;
     margin: 0;
+    min-width: 17em;
 }
 
 .activites:hover {
@@ -476,13 +482,14 @@ footer {
     font-weight: 900;
 }
 
-
+footer ul {
+    margin-left: 1em;
+}
 
 footer li {
     display: block;
-    padding: 10px;
+    padding: 0.8em;
     margin-right: 10em ;
-
 }
 
 #footer_menu {

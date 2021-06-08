@@ -1,14 +1,7 @@
 
-@media only screen
-
-and (min-device-width: 375px)
-
-and (max-device-width: 667px)
-
-and (-webkit-min-device-pixel-ratio: 2) {
-
+@media all and (max-width: 480px) {
     
-    body {
+body {
         margin: 0;
     }
 
@@ -101,13 +94,6 @@ and (-webkit-min-device-pixel-ratio: 2) {
         display: flex;
         flex-flow: row nowrap;
         justify-content: flex-start;
-        align-items: left;
-    }
-
-    #search {
-        height: 2.5em;
-        border: 0.2 solid #DEEBFF;
-        width: 20em;
     }
 
     #button_recherche {
@@ -126,11 +112,6 @@ and (-webkit-min-device-pixel-ratio: 2) {
         width: 3em;
     }
 
-    #search {
-        height: 3em;
-        border: 0.1em solid #F2F2F2;
-    }
-
     #icon_location {
         height: 2.5em;
     }
@@ -143,6 +124,10 @@ and (-webkit-min-device-pixel-ratio: 2) {
     .info_disponibilites {
         margin-top: 5em;
         background-color: lawngreen;
+    }
+
+    #search {
+        width: 17em;
     }
 
     /* SECTION 1 */
@@ -167,15 +152,10 @@ and (-webkit-min-device-pixel-ratio: 2) {
         display: flex;
         flex-direction: column;
         background-color: white;
-        width: 100%;
-        margin: 5em;
-        padding: 5em;
-        grid-gap: 1em;
     }
 
-    #container_hebergements img {
-        width: 100%;
-        height: 30em;
+    .hebergements {
+        min-width: 19em;
     }
 
     #container_hebergements :nth-child(1) {
@@ -216,7 +196,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
         flex-flow: column wrap;
         align-self: flex-start;
         border-radius: 0;
-        margin: auto;
+        margin: 0;
         width: 100%;
     }
 
@@ -245,22 +225,28 @@ and (-webkit-min-device-pixel-ratio: 2) {
     /* SECTION 2: Activités */
 
     #section2 {
+        display: flex;
+        flex-flow: column;
         margin: auto;
         width: 90%;
         margin-bottom: 2em;
+        text-align: left;
     }
 
     #container_activites {
         display: flex;
         flex-flow: column wrap;
         grid-gap: 2em;
-        justify-content: center;
         font-weight: bold;
         margin: auto;
+        text-align: left;
+        align-items: center;
+        min-width: 20em;
     }
 
     .activites {
         min-height: 12em;
+        min-width: 21em;
     }
 
     #box1 {
