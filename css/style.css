@@ -51,6 +51,7 @@ header {
     flex-wrap: wrap;
     justify-content: flex-start;
     align-content: left;
+    margin-top: 0;
 }
 
 #top_header {
@@ -59,7 +60,6 @@ header {
     margin-top: 0.1em;
     align-items: center;
 }
-
 
 
 #logo {
@@ -71,6 +71,7 @@ nav li {
     display: inline;
     padding: 1.5em;
     justify-items: center;
+    margin-top: 0;
 }
 
 
@@ -83,8 +84,12 @@ nav li:hover {
     align-self: left;
     font-weight: bold;
     color: #0065FC;
-    padding: 2em;
+    padding: 1.5em;
     border-top: 0.15em solid transparent;
+}
+
+.item3_menu:hover {
+    color: black;
 }
 
 .item_menu:hover {
