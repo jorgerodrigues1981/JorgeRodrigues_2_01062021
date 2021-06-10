@@ -8,7 +8,7 @@ body {
 
     #container {
         width: 100%;
-        margin: 0 1em 0 1em;
+        margin: 0;
     }
 
 /* HEADER */
@@ -81,7 +81,6 @@ body {
         align-items: center;
         border: 0.1em solid #F2F2F2;
         border-radius: 1em;
-        padding: 0;
         margin: 1em 0 0 0;
         height: 2em;
         padding-right: 1em;
@@ -89,8 +88,10 @@ body {
 
     #filtres_titre {
         margin-top: 1.5em;
-        padding-right: 20em;
+        flex: 100%;
+
     }
+
 
     form {
         display: flex;
@@ -152,7 +153,8 @@ body {
         display: flex;
         flex-direction: column;
         max-width: 100%;
-        background-color: white;
+        background-color: rgb(255, 255, 255);
+        margin: auto;
     }
 
     .hebergements {
@@ -209,8 +211,8 @@ body {
         flex-flow: column wrap;
         align-self: flex-start;
         border-radius: 0;
-        margin: 0;
-        padding: 0 1em 0 1em;
+        margin: auto;
+        padding: 0 1em 2em 1em;
         width: 100%;
     }
 
@@ -257,7 +259,7 @@ body {
         margin: auto;
         padding: 0 1em 0 1em;
         text-align: left;
-        align-items: center;
+        align-items: left;
         min-width: 100%;
     }
 
@@ -266,9 +268,10 @@ body {
     }
 
     .activites {
+        margin: auto;
         min-height: 12em;
-        min-width: 100%;
-        max-width: 100%;
+        min-width: 93%;
+        max-width: 93%;
     }
 
     #box1 {
