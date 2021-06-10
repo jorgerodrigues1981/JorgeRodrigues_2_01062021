@@ -249,8 +249,8 @@ form {
 }
 
 #container_hebergements h2 {
-    padding-right: 10em;
     justify-self: left;
+    padding-right: 10em;
 }
 
 
@@ -289,7 +289,6 @@ form {
     display: flex;
     flex-direction: row;
     background-color: white;
-    min-width: 19em;
     border-radius: 1em;
     padding: 0.5em;
     box-shadow: 0.009em 0.009em 1em rgb(150, 149, 149);

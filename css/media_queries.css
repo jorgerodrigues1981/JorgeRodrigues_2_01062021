@@ -1,26 +1,26 @@
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 600px) {
     
 body {
         margin: 0;
     }
 
     #container {
-        width: 100%;
-        margin-top: 0;
+        width: 80%;
+        margin: 0 1em 0 1em;
     }
 
 /* HEADER */
 
     header {
-        width: 90%;
+        width: 100%;
         margin: auto;
+        padding: 0 1em 0 1em;
     }
 
     #top_header {
         display: flex;
         flex-flow: row wrap;
-        min-width: 100px;
     }
     
     #top_header :nth-child(1) {
@@ -127,7 +127,7 @@ body {
     }
 
     #search {
-        width: 17em;
+        width: 15em;
     }
 
     /* SECTION 1 */
@@ -136,7 +136,7 @@ body {
         display: flex;
         flex-flow: row wrap;
         width: auto;
-        margin: auto;
+        margin: auto;;
     }
 
     #section1 :nth-child(1) {
@@ -156,7 +156,6 @@ body {
 
     .hebergements {
         max-width: 100%;
-        min-width: 19em;
     }
 
     #container_hebergements img {
@@ -209,14 +208,15 @@ body {
         align-self: flex-start;
         border-radius: 0;
         margin: 0;
+        padding: 0 1em 0 1em;
         width: 100%;
     }
 
     #populaires {
         display: flex;
         justify-content: flex-start;
-        min-width: 19em;
         max-width: 100%;
+        min-width: 5em;
     }
 
     #container_populaires :nth-child(1) {
@@ -241,7 +241,7 @@ body {
     #section2 {
         display: flex;
         flex-flow: row wrap;
-        width: auto;
+        max-width: 100%;
         margin: auto;
         margin-bottom: 2em;
     }
@@ -252,21 +252,20 @@ body {
         grid-gap: 2em;
         font-weight: bold;
         margin: auto;
-        margin-left: 1em;
-        margin-right: 1em;
+        padding: 0 1em 0 1em;
         text-align: left;
         align-items: center;
-        min-width: 20em;
+        min-width: 100%;
     }
 
     #head_activites {
-        margin-left: 1em;
+        padding-left: 1em;
     }
 
     .activites {
         min-height: 12em;
-        min-width: 19em;
-        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
     }
 
     #box1 {
@@ -283,6 +282,7 @@ body {
         flex-flow: column wrap;
         justify-content: center;
         width: 100%;
+        padding-left: 1em;
     }
 
     footer ul {
