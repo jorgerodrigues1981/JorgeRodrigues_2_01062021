@@ -29,6 +29,10 @@ a:visited {
     color: inherit;
 }
 
+a:hover {
+    color: inherit;
+}
+
 body {
     margin: 0;
 }
@@ -90,9 +94,8 @@ nav li:hover {
     color: inherit;
 }
 
-.item_menu:hover {
-    border-top: 0.15em solid #0065FC;
-    color: #0065FC;
+.item3_menu:active {
+    color: inherit;
 }
 
 
