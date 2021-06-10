@@ -215,6 +215,8 @@ form {
 #container_hebergements {
     display: flex;
     flex-flow: row wrap;
+    justify-content: left;
+    width: fit-content;
     max-width: 60%;
     background-color: #F2F2F2;
     border-radius: 1em;
@@ -227,10 +229,6 @@ form {
 
 .responsive {
     object-fit: cover;
-}
-
-#container_hebergements div:nth-child(1) {
-    grid-column: 1 / -1;
 }
 
 #container_hebergements img {
@@ -248,9 +246,10 @@ form {
 }
 
 #container_hebergements h2 {
-    flex-grow: 3;
-    margin-right: 10em;
+    padding-right: 10em;
+    justify-self: left;
 }
+
 
 .hebergements:hover {
     box-shadow: 0.009em 0.009em 1em #bdc2ca;

@@ -1,5 +1,5 @@
 
-@media all and (max-width: 475px) {
+@media only screen and (max-width: 375px) {
     
 body {
         margin: 0;
@@ -20,6 +20,7 @@ body {
     #top_header {
         display: flex;
         flex-flow: row wrap;
+        min-width: 100px;
     }
     
     #top_header :nth-child(1) {
@@ -123,7 +124,6 @@ body {
 
     .info_disponibilites {
         margin-top: 5em;
-        background-color: lawngreen;
     }
 
     #search {
@@ -137,7 +137,6 @@ body {
         flex-flow: row wrap;
         width: auto;
         margin: auto;
-        width: 100%;
     }
 
     #section1 :nth-child(1) {
@@ -151,19 +150,25 @@ body {
     #container_hebergements {
         display: flex;
         flex-direction: column;
+        max-width: 100%;
         background-color: white;
     }
 
     .hebergements {
+        max-width: 100%;
         min-width: 19em;
-        min-height: 19em;
     }
 
     #container_hebergements img {
         width: 100%;
-        min-height: 13em;
-        border-radius: 1em 1em 0 0;
+        height: 9em;
     }
+
+    #container_hebergements h2 {
+        padding-right: 0;
+        justify-self: left;
+    }
+    
 
     #container_hebergements :nth-child(1) {
         order: 1;
@@ -210,6 +215,8 @@ body {
     #populaires {
         display: flex;
         justify-content: flex-start;
+        min-width: 19em;
+        max-width: 100%;
     }
 
     #container_populaires :nth-child(1) {
@@ -233,11 +240,10 @@ body {
 
     #section2 {
         display: flex;
-        flex-flow: column;
+        flex-flow: row wrap;
+        width: auto;
         margin: auto;
-        width: 100%;
         margin-bottom: 2em;
-        text-align: left;
     }
 
     #container_activites {
@@ -246,6 +252,8 @@ body {
         grid-gap: 2em;
         font-weight: bold;
         margin: auto;
+        margin-left: 1em;
+        margin-right: 1em;
         text-align: left;
         align-items: center;
         min-width: 20em;
@@ -257,7 +265,8 @@ body {
 
     .activites {
         min-height: 12em;
-        min-width: 25em;
+        min-width: 19em;
+        width: 100%;
     }
 
     #box1 {
