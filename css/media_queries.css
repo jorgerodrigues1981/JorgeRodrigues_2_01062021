@@ -2,11 +2,12 @@
 @media only screen and (max-width: 600px) {
     
 body {
+        width: 100%;
         margin: 0;
     }
 
     #container {
-        width: 80%;
+        width: 100%;
         margin: 0 1em 0 1em;
     }
 
@@ -135,8 +136,8 @@ body {
     #section1 {
         display: flex;
         flex-flow: row wrap;
-        width: auto;
-        margin: auto;;
+        width: 100%;
+        margin: auto;
     }
 
     #section1 :nth-child(1) {
@@ -156,6 +157,7 @@ body {
 
     .hebergements {
         max-width: 100%;
+        min-width: 19em;
     }
 
     #container_hebergements img {
@@ -216,8 +218,9 @@ body {
         display: flex;
         justify-content: flex-start;
         max-width: 100%;
-        min-width: 5em;
     }
+
+
 
     #container_populaires :nth-child(1) {
         order: 1;
