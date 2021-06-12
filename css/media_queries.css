@@ -159,7 +159,6 @@ body {
 
     .hebergements {
         max-width: 100%;
-        min-width: 19em;
     }
 
     #container_hebergements img {
@@ -282,13 +281,11 @@ body {
         height: 12em;
     }
 
-
     footer {
         display: flex;
         flex-flow: column wrap;
-        justify-content: center;
-        width: 100%;
         padding-left: 1em;
+        margin: auto;
     }
 
     footer ul {

@@ -329,6 +329,14 @@ form {
     color: #0065FC;
 }
 
+#afficher_plus:active {
+    color: inherit;
+}
+
+#afficher_plus:visited {
+    color: inherit;
+}
+
 /* SECTION 2: Activités dans la ville */
 #section2 {
     margin: auto;
@@ -337,6 +345,8 @@ form {
 
 #container_activites {
     display: grid;
+    justify-content: left;
+    margin: auto;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 16em 16em;
     grid-gap: 2em;
