@@ -41,6 +41,7 @@ body {
     width: 90%;
     margin: auto;
     margin-top: 0;
+    align-content: center;
 }
 
 
@@ -146,6 +147,7 @@ form {
     justify-content: left;
     align-items: center;
     margin-bottom: 2em;
+    padding-right: 1em;
 }
 
 .fas {
@@ -279,11 +281,9 @@ form {
 #container_populaires {
     display: flex;
     flex-flow: column;
-    width: fit-content;
     background-color: #F2F2F2;
     padding: 1em 2em 1em 2em;
     border-radius: 1em;
-    margin-left: 1em;
     grid-gap: 2em;
     font-size: 0.8em;
     align-self: top;
@@ -296,7 +296,7 @@ form {
     border-radius: 1em;
     padding: 0.5em;
     box-shadow: 0.009em 0.009em 1em rgb(150, 149, 149);
-    min-width: 21em;
+    min-width: 20em;
 }
 
 .populaires.etoiles {
@@ -320,6 +320,7 @@ form {
 #container_populaires img {
     object-fit: cover;
     width: 8em;
+    min-width: 8em;
     height: 8em;
     margin-right: 1em;
     border-radius: 1em 0 0 1em;

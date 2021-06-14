@@ -1,14 +1,10 @@
 
 @media only screen and (max-width: 600px) {
     
-body {
-        width: 100%;
-        margin: 0;
-    }
-
     #container {
+        margin: auto;
         width: 100%;
-        margin: 0;
+        margin-top: 0;
     }
 
 /* HEADER */
@@ -81,15 +77,14 @@ body {
         align-items: center;
         border: 0.1em solid #F2F2F2;
         border-radius: 1em;
-        margin: 1em 0 0 0;
+        margin: 0.2em 0 0 0;
         height: 2em;
-        padding-right: 1em;
+        padding-right: 2em;
     }
 
     #filtres_titre {
         margin-top: 1.5em;
         flex: 100%;
-
     }
 
 
@@ -159,6 +154,7 @@ body {
 
     .hebergements {
         max-width: 100%;
+        min-width: 100%;
     }
 
     #container_hebergements img {
@@ -218,9 +214,17 @@ body {
     #populaires {
         display: flex;
         justify-content: flex-start;
-        max-width: 100%;
+        min-width: 10em;
+        width: 100%;
     }
 
+    #container_populaires img {
+        object-fit: cover;
+        width: 6.5em;
+        height: 10em;
+        margin-right: 1em;
+        border-radius: 1em 0 0 1em;
+    }
 
 
     #container_populaires :nth-child(1) {
@@ -259,7 +263,7 @@ body {
         padding: 0 1em 0 1em;
         text-align: left;
         align-items: left;
-        min-width: 100%;
+        width: 100%;
     }
 
     #head_activites {
@@ -269,8 +273,7 @@ body {
     .activites {
         margin: auto;
         min-height: 12em;
-        min-width: 93%;
-        max-width: 93%;
+        width: 100%;
     }
 
     #box1 {
