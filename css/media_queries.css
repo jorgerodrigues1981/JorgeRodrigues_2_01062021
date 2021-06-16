@@ -1,5 +1,5 @@
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
     
     #container {
         margin: auto;
@@ -12,12 +12,12 @@
     header {
         width: 100%;
         margin: auto;
-        padding: 0 1em 0 1em;
     }
 
     #top_header {
         display: flex;
         flex-flow: row wrap;
+        width: 100%;
     }
     
     #top_header :nth-child(1) {
@@ -30,6 +30,10 @@
 
     #top_header :nth-child(3) {
         order: 2;
+    }
+
+    #logo {
+        padding-left: 1em;
     }
 
     nav {
@@ -62,13 +66,25 @@
         color: #0065FC;
     }
 
+    header h1 {
+        padding-left: 0.6em;
+    }
+
+    header p {
+        padding-left: 1em;
+    }
+
+    form {
+        padding-left: 1em;
+    }
     
     #container_filtres {
         display: flex;
         flex-flow: row wrap;
         align-content: left;
         margin: 1em 0 2em 0;
-        grid-gap: 1em
+        grid-gap: 1em;
+        padding-left: 1em;
     }
 
     .filtres {
@@ -119,8 +135,8 @@
         cursor: pointer;
     }
 
-    .info_disponibilites {
-        margin-top: 5em;
+    #info_disponibilites {
+        margin-left: 1em;
     }
 
     #search {
@@ -147,13 +163,14 @@
     #container_hebergements {
         display: flex;
         flex-direction: column;
-        max-width: 100%;
         background-color: rgb(255, 255, 255);
-        margin: auto;
+        margin: 1em;
+        padding: 0 1em 2em 1em;
+        width: 100%;
     }
 
     .hebergements {
-        max-width: 100%;
+        width: 100%;
         min-width: 100%;
     }
 
@@ -206,15 +223,16 @@
         flex-flow: column wrap;
         align-self: flex-start;
         border-radius: 0;
-        margin: auto;
         padding: 0 1em 2em 1em;
         width: 100%;
+        margin: 0;
+        padding: 1em 2em 1em 2em;
     }
 
     #populaires {
         display: flex;
         justify-content: flex-start;
-        min-width: 10em;
+        min-width: 15em;
         width: 100%;
     }
 
@@ -260,10 +278,8 @@
         grid-gap: 2em;
         font-weight: bold;
         margin: auto;
-        padding: 0 1em 0 1em;
-        text-align: left;
-        align-items: left;
         width: 100%;
+        padding: 0 2em 1em 2em;
     }
 
     #head_activites {
@@ -272,7 +288,6 @@
 
     .activites {
         margin: auto;
-        min-height: 12em;
         width: 100%;
     }
 
