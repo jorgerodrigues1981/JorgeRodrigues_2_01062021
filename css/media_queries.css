@@ -1,11 +1,8 @@
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 375px) {
     
     #container {
         width: 100%;
-        margin: auto;
-        margin-top: 0;
-        align-content: center;
     }
 
 /* HEADER */
@@ -145,7 +142,7 @@
     }
 
     #search {
-        width: 15em;
+        width: 18em;
     }
 
     /* SECTION 1 */
