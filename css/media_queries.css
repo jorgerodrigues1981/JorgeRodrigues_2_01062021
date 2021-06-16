@@ -1,5 +1,5 @@
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
     
     #container {
         margin: auto;
@@ -170,8 +170,8 @@
     }
 
     .hebergements {
-        width: 100%;
-        min-width: 100%;
+        max-width: 100%;
+        min-width: 13em;
     }
 
     #container_hebergements img {
@@ -229,11 +229,9 @@
         padding: 1em 2em 1em 2em;
     }
 
-    #populaires {
-        display: flex;
-        justify-content: flex-start;
+   
+    .populaires {
         min-width: 15em;
-        width: 100%;
     }
 
     #container_populaires img {
@@ -287,8 +285,8 @@
     }
 
     .activites {
-        margin: auto;
         width: 100%;
+        min-width: 15em;
     }
 
     #box1 {
