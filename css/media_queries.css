@@ -2,9 +2,10 @@
 @media only screen and (max-width: 600px) {
     
     #container {
-        margin: auto;
         width: 100%;
+        margin: auto;
         margin-top: 0;
+        align-content: center;
     }
 
 /* HEADER */
@@ -12,6 +13,10 @@
     header {
         width: 100%;
         margin: auto;
+    }
+
+    header h1 {
+        padding-right: 1em;
     }
 
     #top_header {
@@ -229,7 +234,6 @@
         padding: 1em 2em 1em 2em;
     }
 
-   
     .populaires {
         min-width: 15em;
     }
@@ -241,7 +245,6 @@
         margin-right: 1em;
         border-radius: 1em 0 0 1em;
     }
-
 
     #container_populaires :nth-child(1) {
         order: 1;
