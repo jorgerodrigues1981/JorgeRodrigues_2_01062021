@@ -7,6 +7,7 @@
 h1 {
     font-size: 1.5rem;
     text-align: left;
+    margin: 0;
 }
 
 h2{
@@ -15,6 +16,7 @@ h2{
 
 p {
     font-size: 1rem;
+    margin: 0;
 }
 
 a {
@@ -38,7 +40,7 @@ body {
 }
 
 #container {
-    width: 90%;
+    width: 100%;
     margin: auto;
     margin-top: 0;
     align-content: center;
@@ -51,7 +53,18 @@ header {
     display: flex;
     flex-flow: column;
     align-content: left;
+    padding: 0 3.125em 0 3.125em;
 }
+
+header h1 {
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+}
+
+header p {
+    margin-bottom: 2em;
+}
+
 
 #top_header {
     display: flex;
@@ -81,38 +94,31 @@ nav li:hover {
 
 .item3_menu {
     align-self: left;
-    font-weight: bold;
-    color: #0065FC;
     padding: 1.5em;
     border-top: 0.15em solid transparent;
 }
 
-.item3_menu:hover {
+.item3_menu a {
+    font-weight: bold;
+    color: #0065FC;
+}
+
+.item3_menu a:hover {
     color: black;
 }
-
-.item3_menu:visited {
-    color: inherit;
-}
-
-.item3_menu:active {
-    color: inherit;
-}
-
 
 form {
     display: flex;
     flex-flow: row wrap;
     justify-content: left;
-    align-items: center;
 }
 
 #icon_location {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 2.5em;
-    min-width: 2.5em;
+    min-height: 3.125em;
+    min-width: 3.125em;
     background-color:  #F2F2F2;
     border-radius: 1em 0 0 1em;
 }
@@ -122,8 +128,8 @@ form {
     background-color:  #0065FC;
     border: none;
     border-radius: 0 1em 1em 0;
-    height: 2.5em;
-    width: 7em
+    height: 3.125em;
+    width: 8.375em;
 }
 
 .fas.fa-search {
@@ -136,9 +142,11 @@ form {
 }
 
 #search {
-    height: 2.5em;
+    height: 3.125em;
     border: 0.1em solid #F2F2F2;
-    width: 20em;
+    width: 14.5em;
+    font-weight: 600;
+    padding-left: 1em;
 }
 
 #info_disponibilites {
@@ -150,17 +158,17 @@ form {
     padding-right: 1em;
 }
 
-.fas {
-    padding-top: 10px;
-    min-height: 25px;
-    min-width: 35px;
-    text-align: center;
-    border-radius: 50%;
-}
 
-.fas.fa-info {
-    border: 1px solid #F2F2F2;
-    margin-right: 20px;
+.icon_disponibilites {
+    display: flex;
+    flex-flow: row nowrap;
+    min-height: 1.44em;
+    min-width: 1.44em;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; 
+    border: 0.1em solid #F2F2F2;
+    margin-right: 1em;
 }
 
 #container_filtres {
@@ -168,37 +176,40 @@ form {
     flex-direction: row;
     justify-content: left;
     align-items: center;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin-top: 1.56em;
+    margin-bottom: 1.56em;
     font-weight: bold;
+    grid-gap: 1.56em
 }
 
 .filtres {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-flow: row nowrap;
+    height: 2.9em;
+    border-radius: 5em;
     border: 0.1em solid #F2F2F2;
-    border-radius: 1em;
-    padding: 0 1em 0 0;
-    margin: 1em 1em 1em 1em;
-    height: 32px;
+    align-items: center;
+    padding-left: 1em;
+    padding-right: 1.38em;
 }
 
-.filtres > p {
-    padding-left: 1em;
-    padding-right: 1em;
+.icons {
+    display: flex;
+    flex-flow: row nowrap;
+    position: relative;
+    left: -1.5em;
+    background-color: #DEEBFF;
+    min-height: 3em;
+    min-width: 3em;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; 
 }
 
 .filtres:hover {
     background-color: #DEEBFF;
 }
 
-.filtres > i {
-    position: relative;
-    text-align: center;
-    left: -5px;
-    background-color: #DEEBFF;
-}
 
 #filtres_titre {
     padding-right: 2em;
@@ -212,6 +223,7 @@ form {
     flex-direction: row;
     flex-wrap: nowrap;
     grid-gap: 1em;
+    padding: 0 3.125em 0 3.125em;
 }
 
 
@@ -220,14 +232,23 @@ form {
 #container_hebergements {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
     background-color: #F2F2F2;
     border-radius: 1em;
     padding: 1em 2em 1em 2em;
     font-size: 0.8em;
-    grid-gap: 2em;
     width: fit-content;
 }
+
+#container_cartes_hebergements {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    font-size: 0.8em;
+    grid-gap: 2em;
+    width: fit-content;
+
+}
+
 
 .responsive {
     object-fit: cover;
@@ -246,6 +267,10 @@ form {
     box-shadow: 0.009em 0.009em 1em rgb(150, 149, 149);
     max-width: 13.5em;
     min-width: 13em;
+}
+
+.hebergements_description {
+    padding-left: 1em;
 }
 
 #container_hebergements h2 {
@@ -336,27 +361,25 @@ form {
     color: inherit;
 }
 
-/* SECTION 2: Activités dans la ville */
-#section2 {
-    margin: auto;
-}
 
+
+/* SECTION 2: Activités dans la ville */
+
+
+#section2 {
+    padding: 2em 3.125em 3.75em 3.125em;
+}
 
 #container_activites {
     display: grid;
     justify-content: left;
     margin: auto;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 16em 16em;
-    grid-gap: 2em;
-    width: 100%;
+    grid-template-rows: 195px 195px;
+    grid-gap: 40px;
     border-radius: 1em 1em 0 0;
-    margin: 3em 0 3em 0;
 }
 
-.activites {
-    min-width: 15em;
-}
 
 #container_activites :nth-child(1) {
     grid-column: 1 / 2;
@@ -365,7 +388,7 @@ form {
 
 #box1 {
     border-radius: 1em 1em 0 0;
-    height: 31em;
+    height: 380px;
     background-image: url("../images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -379,7 +402,7 @@ form {
 
 #box2 {
     border-radius: 1em 1em 0 0;
-    height: 13em;
+    height: 147.5px;
     background-image: url("../images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -393,7 +416,7 @@ form {
 
 #box3 {
     border-radius: 1em 1em 0 0;
-    height: 13em;
+    height: 147.5px;
     background-image: url("../images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: cover; 
@@ -408,7 +431,7 @@ form {
 
 #box4 {
     border-radius: 1em 1em 0 0;
-    height: 31em;
+    height: 380px;
     background-image: url("../images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -422,7 +445,7 @@ form {
 
 #box5 {
     border-radius: 1em 1em 0 0;
-    height: 13em;
+    height: 147.5px;
     background-image: url("../images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -436,7 +459,7 @@ form {
 
 #box6 {
     border-radius: 1em 1em 0 0;
-    height: 13em;
+    height: 147.5px;
     background-image: url("../images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -445,9 +468,10 @@ form {
 
 
 .description {
-    background-color: white;
-    padding: 1em;
+    height: 55px;
     border-radius: 0 0 1em 1em;
+    padding: 15px 0 0 20px;
+    align-items: center;
 }
 
 .activites {
@@ -473,10 +497,10 @@ form {
 
 footer {
     display: flex;
-    flex-direction: row;
+    flex-direction: row wrap;
     justify-content: left;
-    width: 100%;
     background-color: #F2F2F2;
+    padding: 3.125em 3.125em 0 3.125em;
 }
 
 .footer_menu_header {
@@ -484,18 +508,19 @@ footer {
 }
 
 footer ul {
-    margin-left: 1em;
+    padding: 0 15em 0 0;
 }
 
 footer li {
     display: block;
-    padding: 0.8em;
-    margin-right: 10em ;
+    padding-bottom: 1.25em;
 }
 
 #footer_menu {
     font-weight: 300;
 }
+
+/*FOOTER links */ 
 
 footer a:active {
     color: inherit;
