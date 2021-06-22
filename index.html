@@ -17,7 +17,6 @@
 
 <body>
 
-<div id="container">
 
 <header>
         <div id="top_header">      
@@ -31,6 +30,7 @@
                 <div class="item3_menu"><a href="#sinscrire">S'inscrire</a></div>
         </div>
     
+    <div id="header_bottom">
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
 
         <p>En plein centre ville ou en pleine nature</p>
@@ -38,7 +38,7 @@
         <form>
             <div id="icon_location"><i class="fa fa-map-marker-alt" style="color: black"></i></div>
             <div><input type="search" id="search" name="search" value="Marseille, France"></div>
-            <div><input type="submit" id="button_recherche" value="Rechercher"><i class="fas fa-search" aria-hidden="true"></i></div>
+            <input type="submit" id="button_recherche" value="Rechercher"><div class="loupe"><i class="fas fa-search" aria-hidden="true"></i></div>
         </form>
 
 
@@ -54,21 +54,22 @@
             <div class="icon_disponibilites"><i class="fas fa-info" style="color: #0065FC"></i></div>
             <div>Plus de 500 logements sont disponibles dans cette ville</div>
         </div>
+    </div>
     
 </header>
 
 <!-- SECTION 1: Hébergements disponibles dans la ville et hébergements populaires -->
 <section id="section1">
     <div id="container_hebergements">
-                <h2>Hébergements à Marseille</h2>
-          <div id="container_cartes_hebergements"> 
+                <div id="header_hebergements"><h2>Hébergements à Marseille</h2></div>
+                <div id="container_cartes_hebergements"> 
                 <a href="#link">
                 <div class="hebergements">
                     <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebière" title="Auberge la Cannebière" class="responsive"/>
                 <div class="hebergements_description">
                     <h3>Auberge la Cannebière</h3>
                     <p>Nuit à partir de 25€</p>
-                    <div class="etoiles">
+                    <div class="etoiles_hebergements">
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
@@ -84,7 +85,7 @@
                 <div class="hebergements_description">
                     <h3>Hôtel du port</h3>
                     <p>Nuit à partir de 52€</p>
-                    <div class="etoiles">
+                    <div class="etoiles_hebergements">
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
@@ -100,7 +101,7 @@
                 <div class="hebergements_description">
                     <h3>Hôtel Les mouettes</h3>
                     <p>Nuit à partir de 76€</p>
-                    <div class="etoiles">
+                    <div class="etoiles_hebergements">
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
@@ -116,7 +117,7 @@
                 <div class="hebergements_description">
                     <h3>Hôtel de la mer</h3>
                     <p>Nuit à partir de 46€</p>
-                    <div class="etoiles">
+                    <div class="etoiles_hebergements">
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
@@ -132,7 +133,7 @@
                 <div class="hebergements_description">
                     <h3>Auberge Le Pannier</h3>
                     <p>Nuit à partir de 23€</p>
-                    <div class="etoiles">
+                    <div class="etoiles_hebergements">
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
@@ -148,7 +149,7 @@
                 <div class="hebergements_description">
                     <h3>Hôtel chez Amina</h3>
                     <p>Nuit à partir de 96€</p>
-                    <div class="etoiles">
+                    <div class="etoiles_hebergements">
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
@@ -169,10 +170,12 @@
                 
                 <a href="#link">
                 <div class="populaires">
-                        <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin" class="responsive"/>
-                        <div class="populaires_description">
-                                <h3>Hôtel Le soleil du matin</h3>
-                                <p>Nuit à partir de 128€</p>
+                        <div class="images_populaires"><img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin" title="Hôtel Le soleil du matin" class="responsive"/></div>
+                        <div class="populaires_items">
+                            <div class="populaires_description">
+                                    <h3>Hôtel Le soleil du matin</h3>
+                                    <p>Nuit à partir de 128€</p>
+                            </div>
                             <div class="etoiles">
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
@@ -185,10 +188,12 @@
 
                 <a href="#link">
                 <div class="populaires">
-                    <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Hôtel Le soleil du matin" class="responsive"/>
-                        <div class="populaires_description">
-                                <h3>Au couer de l'eau Chambres d'hôtes</h3>
-                                <p>Nuit à partir de 71€</p>
+                    <div class="images_populaires"><img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au couer de l'eau Chambres d'hôtes" title="Au couer de l'eau Chambres d'hôtes" class="responsive"/></div>
+                        <div class="populaires_items">
+                            <div class="populaires_description">
+                                    <h3>Au couer de l'eau Chambres d'hôtes</h3>
+                                    <p>Nuit à partir de 71€</p>
+                            </div>
                             <div class="etoiles">
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
@@ -201,10 +206,12 @@
 
                 <a href="#link">
                 <div class="populaires">
-                    <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Le soleil du matin" class="responsive"/>
-                        <div class="populaires_description">
+                    <div class="images_populaires"><img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tout bleau et Blanc" title="Hôtel Tout bleau et Blanc" class="responsive"/></div>
+                        <div class="populaires_items"> 
+                            <div class="populaires_description">
                                 <h3>Hôtel Tout bleau et Blanc</h3>
                                 <p>Nuit à partir de 68€</p>
+                            </div>
                             <div class="etoiles">
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star checked"></span>
@@ -219,7 +226,7 @@
 
 <!-- SECTION 2: Activités-->
 <section id="section2">
-    <h2 id="head_activites">Activités à Marseille</h2>
+    <h2>Activités à Marseille</h2>
     <div id="container_activites">
             <div class="activites"> 
                 <a href="#link">
@@ -265,7 +272,6 @@
     </div>
 </section>
 
-</div>
 
 <footer>
             <ul>
