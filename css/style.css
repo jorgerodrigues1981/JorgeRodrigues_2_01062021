@@ -59,7 +59,6 @@ header p {
     margin-bottom: 2em;
 }
 
-
 #top_header {
     display: flex;
     flex-flow: row nowrap;
@@ -148,7 +147,6 @@ form {
     padding-right: 1em;
 }
 
-
 .icon_disponibilites {
     display: flex;
     flex-flow: row nowrap;
@@ -200,7 +198,6 @@ form {
     background-color: #DEEBFF;
 }
 
-
 #filtres_titre {
     padding-right: 2em;
 }
@@ -226,7 +223,6 @@ form {
     border-radius: 1em;
     padding: 1em 2em 1em 2em;
     font-size: 0.8em;
-    width: fit-content;
 }
 
 #container_cartes_hebergements {
@@ -235,7 +231,6 @@ form {
     justify-content: space-between;
     font-size: 0.8em;
     grid-gap: 2em;
-    width: 100%;
 }
 
 .responsive {
@@ -253,7 +248,7 @@ form {
     border-radius: 1em;
     padding: 0.38em;
     box-shadow: 0.009em 0.009em 1em rgb(150, 149, 149);
-    width: 14em;
+    width: 15em;
     height: 12.5em;
 }
 
@@ -312,7 +307,7 @@ form {
 
 .populaires {
     display: flex;
-    flex-direction: row;
+    flex-direction: row wrap;
     background-color: white;
     border-radius: 1em;
     padding: 0.38em;
@@ -473,7 +468,6 @@ form {
     background-size: cover; 
     background-position: center;
 }
-
 
 #container_activites :nth-child(4) {
     grid-column: 3 / 4;
