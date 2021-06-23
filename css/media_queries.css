@@ -20,7 +20,7 @@
     #section1 {
         margin-top: 2em;
     }
-
+    
     
     /* SECTION 1: Hébergements populaires */
 
@@ -28,6 +28,7 @@
         padding: 1em 2em 1em 2em;
         grid-gap: 2em;
         font-size: 0.8em;
+        height: fit-content;
     }
     
     .populaires {
@@ -58,6 +59,7 @@
     .populaires_description p {
         font-size: 1em;
         margin-bottom: 0.2em;
+        margin-left: 0;
     }
     
     .populaires_items {
