@@ -11,13 +11,12 @@ h1 {
     margin: 0;
 }
 
-h2{
+h2 {
     font-size: 1.4rem;
 }
 
 p {
     font-size: 1rem;
-    margin: 0;
 }
 
 a {
@@ -210,7 +209,7 @@ form {
     flex-direction: row;
     flex-wrap: nowrap;
     grid-gap: 1em;
-    padding: 0 3.125em 0 3.125em;
+    padding: 0 3em 0 3em;
 }
 
 
@@ -222,15 +221,14 @@ form {
     background-color: #F2F2F2;
     border-radius: 1em;
     padding: 1em 2em 1em 2em;
-    font-size: 0.8em;
 }
 
 #container_cartes_hebergements {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    font-size: 0.8em;
-    grid-gap: 2em;
+    grid-gap: 1.8em;
+    width: fit-content;
 }
 
 .responsive {
@@ -246,18 +244,28 @@ form {
 .hebergements {
     background-color: white;
     border-radius: 1em;
-    padding: 0.38em;
-    box-shadow: 0.009em 0.009em 1em rgb(150, 149, 149);
+    padding: 0.35em;
+    box-shadow: 0.01em 0.01em 1em rgb(150, 149, 149);
     width: 15em;
-    height: 12.5em;
+    min-width: 15em;
+    height: fit-content;
+    box-sizing: border-box;
 }
 
 .hebergements_description {
     display: flex;
     flex-flow: column wrap;
     align-items: left;
-    justify-content: center;
+    justify-content: left;
     padding-left: 1em;
+}
+
+.hebergements_description h3 {
+    margin: 0.5em 0 0 0;
+}
+
+.hebergements_description p {
+    margin: 0.5em 0 0.5em 0;
 }
 
 #container_hebergements h2 {
@@ -265,22 +273,14 @@ form {
     flex: 100%;
 }
 
-#container_hebergements h3 {
-    justify-self: left;
-    font-size: 1em;
-    margin-bottom: 0.2em;
-}
-
-.populaires_description p {
-    font-size: 1em;
-    margin-bottom: 0.2em;
-}
-
 .hebergements:hover {
-    box-shadow: 0.009em 0.009em 1em #bdc2ca;
+    box-shadow: 0.01em 0.01em 1em #bdc2ca;
     opacity: 80%;
 }
 
+#afficher_plus {
+    margin-top: 2.5em;
+}
 
 
 /* étoiles */
@@ -300,9 +300,13 @@ form {
     background-color: #F2F2F2;
     padding: 1em 2em 2em 2em;
     border-radius: 1em;
-    grid-gap: 2em;
-    font-size: 0.8em;
     align-self: top;
+}
+
+#container_cartes_populaires {
+    display: flex;
+    flex-flow: column;
+    grid-gap: 1.8em;
 }
 
 .populaires {
@@ -310,30 +314,24 @@ form {
     flex-direction: row wrap;
     background-color: white;
     border-radius: 1em;
-    padding: 0.38em;
-    box-shadow: 0.009em 0.009em 1em rgb(150, 149, 149);
-    max-width: 20em;
-    min-width: 20em;
+    padding: 0.35em;
+    box-shadow: 0.01em 0.01em 1em rgb(150, 149, 149);
+    width: 20em;
+    box-sizing: border-box;
     height: 9em;
     justify-content: left;
     align-content: center;
 }
 
-.populaires_description {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: left;
-
-}
-
 .populaires_description h3 {
     font-size: 1em;
-    margin-bottom: 0.2em;
+    margin: auto;
 }
 
 .populaires_description p {
     font-size: 1em;
-    margin-bottom: 0.2em;
+    margin: auto;
+    padding: 0;
 }
 
 .populaires_items {
@@ -352,11 +350,11 @@ form {
 }
 
 .etoiles {
-    padding-top: 1.7em;
+    padding-top: 0;
 }
 
 .populaires:hover {
-    box-shadow: 0.009em 0.009em 1em #bdc2ca;
+    box-shadow: 0.01em 0.01em 1em #bdc2ca;
     opacity: 80%;
 }
 
@@ -367,7 +365,6 @@ form {
     align-items: center;
     height: fit-content;
 }
-
 
 
 #afficher_plus:hover {
@@ -388,7 +385,7 @@ form {
 
 
 #section2 {
-    padding: 2em 3.125em 3.75em 3.125em;
+    padding: 2em 3em 3em 3em;
 }
 
 #container_activites {
@@ -396,7 +393,7 @@ form {
     justify-content: left;
     margin: auto;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 12.19em 12.19em;
+    grid-template-rows: 12em 12em;
     grid-gap: 2.5em;
     border-radius: 1em 1em 0 0;
     font-size: 1rem;
@@ -406,14 +403,14 @@ form {
     display: flex;
     flex-flow: column;
     border-radius: 1em 1em 1em 1em;
-    box-shadow: 0.009em 0.009em 1em rgb(150, 149, 149);
+    box-shadow: 0.01em 0.01em 1em rgb(150, 149, 149);
     padding: 0;
     margin: 0;
     font-size: 1em;
 }
 
 .activites:hover {
-    box-shadow: 0.009em 0.009em 1em #bdc2ca;
+    box-shadow: 0.01em 0.01em 1em #bdc2ca;
     opacity: 80%;
 }
 
@@ -521,7 +518,7 @@ footer {
     flex-direction: row wrap;
     justify-content: left;
     background-color: #F2F2F2;
-    padding: 3.125em 0 0 0;
+    padding: 3em 0 0 0;
 }
 
 .footer_menu_header {
