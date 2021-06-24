@@ -148,12 +148,16 @@
         display: flex;
         flex-flow: column;
         align-content: center;
-        padding: 0 0 0 0;
+        padding: 0;
         margin: auto;
     }
 
     header h1 {
-        padding-right: 1em;
+        padding-right: 1.5em;
+    }
+
+    header p {
+        padding-right: 1.5em;
     }
 
     #top_header {
@@ -162,7 +166,7 @@
         width: 100%;
         padding: 0;
     }
-    
+
     #top_header :nth-child(1) {
         order: 1;
     }
@@ -210,20 +214,26 @@
     }
 
     header h1 {
-        padding-left: 0.6em;
+        padding: 0 1em;
     }
 
     header p {
-        padding-left: 1em;
+        padding: 0 1.5em;
     }
     
+    #header_bottom {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+
     #container_filtres {
         display: flex;
         flex-flow: row wrap;
         align-content: left;
         margin: 1em 0 2em 0;
         grid-gap: 1em;
-        padding-left: 1em;
+        padding: 0 1.5em;
     }
 
     
@@ -235,7 +245,7 @@
     form {
         display: flex;
         flex-flow: row nowrap;
-        padding: 0 1em 0 1em;
+        padding: 0 0 0 1.5em;
     }
 
     form :nth-child(2) {
@@ -250,7 +260,7 @@
         display: flex;
         flex-flow: row nowrap;
         position: relative;
-        left: -1.5em;
+        left: -1em;
         border-radius: 1em 1em 1em 1em;
         background-color:  #0065FC;
         min-height: 3.125em;
@@ -258,7 +268,6 @@
         width: 3em;
         justify-content: center;
         align-items: center;
-        z-index: 3;
     }
 
     .fas.fa-search {
@@ -269,7 +278,6 @@
 
     #search {
         width: 100%;
-        z-index: 1;
     }
 
     #button_recherche {
@@ -286,7 +294,7 @@
     }
 
     #info_disponibilites {
-        margin-left: 1em;
+        margin-left: 1.5em;
         margin-bottom: 1em;
     }
 
@@ -315,12 +323,13 @@
         background-color: transparent;
         justify-items: center;
         width: 20em;
-        padding: 0;
+        padding: 0 0 0 0;
         margin: 0;
     }
 
     #header_hebergements {
         width: 20em;
+        padding-left: 0.5em;
     }
     
     #container_cartes_hebergements {
@@ -329,6 +338,7 @@
         justify-content: center;
         grid-gap: 1.4em;
         margin: 0;
+        padding: 0;
     }
 
     #container_hebergements img {
@@ -338,8 +348,8 @@
     }
     
     .hebergements {
-        max-width: 20em;
-        min-width: 20em;
+        max-width: 19em;
+        min-width: 19em;
     }
 
     #container_hebergements h2 {
@@ -349,9 +359,10 @@
     } 
 
     #afficher_plus {
+        padding-left: 0.5em;
         margin-top: 2em;
-        max-width: 20em;
-        min-width: 20em;
+        max-width: 19em;
+        min-width: 19em;
     }
 
     #container_hebergements :nth-child(1) {
@@ -412,8 +423,8 @@
         border-radius: 1em;
         padding: 0.38em;
         box-shadow: 0.009em 0.009em 1em rgb(150, 149, 149);
-        max-width: 20em;
-        min-width: 20em;
+        max-width: 19em;
+        min-width: 19em;
         box-sizing: border-box;
         height: 9em;
         justify-content: left;
@@ -443,9 +454,10 @@
         display: flex;
         flex-flow: column wrap;
         justify-content: center;
+        align-items: center;
         padding: 0;
         margin: auto;
-        width: fit-content;
+        width: 100%;
     }
 
     #container_activites {
@@ -453,7 +465,7 @@
         flex-flow: column wrap;
         justify-content: center;
         align-items: center;
-        padding: 0 1.25em 1.25em 1.25em;
+        padding: 0 0 1.25em 0;
         grid-gap: 1.4em;
     }
     
@@ -505,15 +517,16 @@
     .activites {
         display: flex;
         flex-flow: column;
-        max-width: 20em;
-        min-width: 20em;
+        max-width: 19em;
+        min-width: 19em;
         height: 12em;
     }
-    
-    #section2 h2 {
-        padding-left: 1em;
-    }
 
+    #head_activites {
+        max-width: 19em;
+        min-width: 19em;
+    }
+    
 
     /*FOOTER*/
 

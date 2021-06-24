@@ -46,7 +46,7 @@ header {
     display: flex;
     flex-flow: column;
     align-content: left;
-    padding: 0 3.125em 0 3.125em;
+    padding: 0 3em 0 3em;
 }
 
 header h1 {
@@ -176,7 +176,8 @@ form {
     border-radius: 5em;
     border: 0.1em solid #F2F2F2;
     align-items: center;
-    padding-left: 1em;
+    justify-content: left;
+    padding-left: 0.4em;
     padding-right: 1em;
 }
 
@@ -184,7 +185,7 @@ form {
     display: flex;
     flex-flow: row nowrap;
     position: relative;
-    left: -1.5em;
+    left: -1em;
     background-color: #DEEBFF;
     min-height: 3em;
     min-width: 3em;
