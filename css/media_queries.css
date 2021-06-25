@@ -248,11 +248,12 @@
         margin: auto;
     }
 
-    nav ul {
+    ul {
         display: flex;
         width: 100%;
         margin: auto;
         padding: 0;
+        list-style-type: none;
     }
 
     nav li {
@@ -265,11 +266,42 @@
         align-content: center;
     }
 
+    nav li:link {
+        color: #0065FC;
+      }
+      
+    nav li:visited {
+        color: #0065FC;
+      }
+      
+    nav li:focus {
+        border-bottom: 0.2em solid #0065FC;
+      }
+      
     nav li:hover {
         border-top: 0;
         border-bottom: 0.2em solid #0065FC;
         color: #0065FC;
     }
+
+    nav li:focus {
+        border-top: 0;
+        border-bottom: 0.2em solid #0065FC;
+        color: #0065FC;
+    }
+
+    nav a:active {
+        color: black;
+    }
+
+    nav a:hover {
+        color: #0065FC;
+    }
+
+    nav a:focus {
+        color: #0065FC;
+    }
+
 
     header h1 {
         padding: 0 1em;
@@ -484,7 +516,7 @@
         max-width: 19em;
         min-width: 19em;
         box-sizing: border-box;
-        height: 9em;
+        height: 10em;
         justify-content: left;
         align-content: center;
     }
