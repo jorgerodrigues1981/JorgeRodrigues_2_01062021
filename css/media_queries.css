@@ -623,7 +623,7 @@
     footer {
         display: flex;
         flex-flow: column wrap;
-        padding: 0em;
+        padding: 2em;
         margin-right: 0em;
         width: 100%;
     }
@@ -634,6 +634,8 @@
     }
 
     footer ul {
+        display: flex;
+        flex-flow: column wrap;
         margin-right: 0;
     }
 }
