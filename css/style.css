@@ -23,18 +23,6 @@ a {
     text-decoration: none;
 }
 
-a:active {
-    color: inherit;
-}
-
-a:visited {
-    color: inherit;
-}
-
-a:hover {
-    color: inherit;
-}
-
 body {
     margin: 0;
 }
@@ -279,8 +267,13 @@ form {
     opacity: 80%;
 }
 
-#afficher_plus {
+.afficher_plus {
+    font-weight: bold;
     margin-top: 2.5em;
+}
+
+.afficher_plus a:hover {
+    color: #0065FC;
 }
 
 
@@ -365,19 +358,6 @@ form {
     justify-content: space-between;
     align-items: center;
     height: fit-content;
-}
-
-
-#afficher_plus:hover {
-    color: #0065FC;
-}
-
-#afficher_plus:active {
-    color: inherit;
-}
-
-#afficher_plus:visited {
-    color: inherit;
 }
 
 

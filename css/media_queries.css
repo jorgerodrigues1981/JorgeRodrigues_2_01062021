@@ -266,39 +266,15 @@
         align-content: center;
     }
 
-    nav li:link {
-        color: #0065FC;
-      }
-      
-    nav li:visited {
-        color: #0065FC;
-      }
-      
-    nav li:focus {
-        border-bottom: 0.2em solid #0065FC;
-      }
-      
     nav li:hover {
         border-top: 0;
         border-bottom: 0.2em solid #0065FC;
         color: #0065FC;
     }
 
-    nav li:focus {
+    nav li:active {
         border-top: 0;
         border-bottom: 0.2em solid #0065FC;
-        color: #0065FC;
-    }
-
-    nav a:active {
-        color: black;
-    }
-
-    nav a:hover {
-        color: #0065FC;
-    }
-
-    nav a:focus {
         color: #0065FC;
     }
 
@@ -396,7 +372,7 @@
         flex-flow: row wrap;
         justify-content: center;
         margin: auto;
-        padding: 0 0 0 0;
+        padding: 0 0 2em 0;
     }
 
     #section1 :nth-child(1) {
@@ -448,12 +424,13 @@
         justify-self: left;
     } 
 
-    #afficher_plus {
+    .afficher_plus {
         padding-left: 0.5em;
         margin-top: 2em;
         max-width: 19em;
         min-width: 19em;
     }
+
 
     #container_hebergements :nth-child(1) {
         order: 1;
@@ -625,7 +602,7 @@
         flex-flow: column wrap;
         padding: 2em;
         margin-right: 0em;
-        width: 100%;
+        width: auto;
     }
     
     footer li {
@@ -638,6 +615,8 @@
         flex-flow: column wrap;
         margin-right: 0;
     }
+
+    footer a:focus {
+        color: #0065FC;
+    }
 }
-
-
