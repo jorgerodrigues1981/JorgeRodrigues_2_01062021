@@ -209,7 +209,7 @@ form {
     flex-flow: row wrap;
     background-color: #F2F2F2;
     border-radius: 1em;
-    padding: 1em 2em 1em 2em;
+    padding: 1em 2em;
 }
 
 #container_cartes_hebergements {
@@ -275,6 +275,7 @@ form {
 .afficher_plus a:hover {
     color: #0065FC;
 }
+
 
 
 /* étoiles */

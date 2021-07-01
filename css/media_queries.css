@@ -19,6 +19,11 @@
         flex: 100%;
     }
 
+    nav li:focus {
+        border-top: 0.2em solid #0065FC;
+        color: #0065FC;
+    }
+
 
     /* SECTION 1 */
 
@@ -125,6 +130,10 @@
         min-width: 20em;
     }
 
+    .afficher_plus a:focus {
+        color: #0065FC;
+    }
+
     
     /* SECTION 2: Activités dans la ville */
 
@@ -185,6 +194,10 @@
 
     footer ul {
         margin-right: 2em;
+    }
+
+    footer a:focus {
+        color: #0065FC;
     }
     
 
@@ -266,18 +279,12 @@
         align-content: center;
     }
 
-    nav li:hover {
+    nav li:hover, nav li:active, nav li:focus, nav li:visited {
         border-top: 0;
         border-bottom: 0.2em solid #0065FC;
         color: #0065FC;
     }
-
-    nav li:active {
-        border-top: 0;
-        border-bottom: 0.2em solid #0065FC;
-        color: #0065FC;
-    }
-
+  
 
     header h1 {
         padding: 0 1em;
@@ -429,6 +436,10 @@
         margin-top: 2em;
         max-width: 19em;
         min-width: 19em;
+    }
+
+    .afficher_plus a:focus {
+        color: #0065FC;
     }
 
 
