@@ -24,6 +24,10 @@
         color: #0065FC;
     }
 
+    a:visited {
+        color: inherit;
+    }
+
 
     /* SECTION 1 */
 
@@ -208,6 +212,9 @@
         margin: 0;
     }
 
+    a:visited {
+        color: inherit;
+    }
 
 /* HEADER */
 
@@ -279,16 +286,11 @@
         align-content: center;
     }
 
-    nav li:hover, nav li:focus {
+    nav li:hover, nav li:focus, nav li:focus-visible {
         color: #0065FC;
         border-top: 0;
         border-bottom: 0.2em solid #0065FC;
     }
-
-    li a:hover, li a:focus {
-        color: #0065FC;
-    }
-  
 
     header h1 {
         padding: 0 1em;
