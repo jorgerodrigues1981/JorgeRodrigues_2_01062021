@@ -286,13 +286,7 @@
         align-content: center;
     }
 
-    nav li:nth-child(1) {
-        color: #0065FC;
-        border-bottom: 0.2em solid #0065FC;
-    }
-
-
-    nav li:hover, nav li:focus, nav li:focus-visible {
+    nav li:hover, nav li:active {
         color: #0065FC;
         border-top: 0;
         border-bottom: 0.2em solid #0065FC;
