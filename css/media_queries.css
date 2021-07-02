@@ -19,11 +19,15 @@
         flex: 100%;
     }
 
-    nav li:focus {
-        border-top: 0.2em solid #0065FC;
+
+    nav li:hover, nav li:active, nav li:focus {
         color: #0065FC;
+        border-top: 0.2em solid #0065FC;
     }
 
+    li a {
+        color: inherit;
+    }
 
     /* SECTION 1 */
 
