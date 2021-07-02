@@ -76,7 +76,6 @@
     .populaires_description {
         display: flex;
         flex-flow: column wrap;
-        align-items: left;
     }
     
     .populaires_description h3 {
@@ -305,7 +304,6 @@
     #container_filtres {
         display: flex;
         flex-flow: row wrap;
-        align-content: left;
         margin: 1em 0 2em 0;
         grid-gap: 1em;
         padding: 0 1.5em;
