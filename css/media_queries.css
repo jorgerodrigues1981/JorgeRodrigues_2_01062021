@@ -283,7 +283,8 @@
 
     nav li:hover, nav li:active, li:focus {
         color: #0065FC;
-        border-top: 0.2em solid #0065FC;
+        border-bottom: 0.2em solid #0065FC;
+        border-top: none;
     }
 
 
@@ -304,12 +305,12 @@
     #container_filtres {
         display: flex;
         flex-flow: row wrap;
-        margin: 1em 0 2em 0;
+        margin: 1em 0 1em 0;
         grid-gap: 1em;
         padding: 0 1.5em;
     }
 
-    
+   
     #filtres_titre {
         margin-top: 1.5em;
         flex: 100%;
@@ -368,7 +369,17 @@
 
     #info_disponibilites {
         margin-left: 1.5em;
-        margin-bottom: 1em;
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+    }
+
+    .icon_disponibilites {
+        min-height: 1.44em;
+        min-width: 1.44em;
+    }
+
+    #info_disponibilites p {
+        padding-right: 0.5em;
     }
 
 
