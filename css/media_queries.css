@@ -20,7 +20,7 @@
     }
 
 
-    nav li:hover, nav li:active, nav li:focus {
+    nav li:hover {
         color: #0065FC;
         border-top: 0.2em solid #0065FC;
     }
@@ -281,11 +281,12 @@
         align-content: center;
     }
 
-    nav li:hover, nav li:active, nav li:focus {
+    nav li:hover, nav li:active, li:focus {
         color: #0065FC;
         border-top: 0;
-        border-bottom: 0.2em solid #0065FC;
+        border-block-end: 0.2em solid #0065FC;
     }
+
 
     header h1 {
         padding: 0 1em;

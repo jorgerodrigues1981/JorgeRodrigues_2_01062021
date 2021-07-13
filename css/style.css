@@ -65,7 +65,6 @@ nav li {
     margin-top: 0;
 }
 
-
 nav li:hover {
     border-top: 0.2em solid #0065FC;
     color: #0065FC;
@@ -131,16 +130,21 @@ form {
     display: flex;
     flex-direction: row;
     justify-content: left;
-    align-items: center;
-    margin-bottom: 2em;
-    padding-right: 1em;
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
 }
+
+#info_disponibilites p {
+    margin: 0;
+    padding: 0.2em;
+}
+
 
 .icon_disponibilites {
     display: flex;
     flex-flow: row nowrap;
-    min-height: 1.44em;
-    min-width: 1.44em;
+    height: 1.44em;
+    width: 1.44em;
     align-items: center;
     justify-content: center;
     border-radius: 50%; 
@@ -184,7 +188,31 @@ form {
     border-radius: 50%; 
 }
 
-.filtres:hover {
+.fa-map-marker-alt {
+    color: black;
+}
+
+.fa-money-bill-wave {
+    color: #0065FC;
+}
+
+.fa-child {
+    color: #0065FC;
+}
+
+.fa-heart {
+    color: #0065FC;
+}
+
+.fa-dog {
+    color: #0065FC;
+}
+
+.fa-info {
+    color: #0065FC;
+}
+
+.filtres:hover, nav li:active, nav li:focus {
     background-color: #DEEBFF;
 }
 
@@ -513,7 +541,7 @@ footer li {
 }
 
 footer ul {
-    margin-right: 8em;
+    margin-right: 12em;
 }
 
 #footer_menu {
